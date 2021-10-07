@@ -7,7 +7,7 @@ export class UI {
     showQuestion(text) {
         const questionTitle = document.getElementById('question');
         questionTitle.innerHTML = text;
-    }
+    };
 
     /**
      * 
@@ -16,6 +16,7 @@ export class UI {
     showChoices(choices, callback) {
         const choicesContainer = document.getElementById('choices');
         choicesContainer.innerHTML = ''
+
         for (let i = 0; i < choices.length; i++) {
             const button = document.createElement('button')
             button.innerText = choices[i];
@@ -23,7 +24,7 @@ export class UI {
             button.addEventListener('click', () => callback(choices[i]))
             choicesContainer.append(button)
         }
-    }
+    };
 
     /**
      * 
@@ -37,7 +38,7 @@ export class UI {
         `
         const element = document.getElementById('quiz');
         element.innerHTML = quizEndHTML;
-    }
+    };
 
     /**
      * 
@@ -47,5 +48,5 @@ export class UI {
     showProgress(currentIndex, total) {
         const element = document.getElementById('progress')
         element.innerHTML = `Question ${currentIndex} of ${total}`;
-    }
-}
+    };
+};

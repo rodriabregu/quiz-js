@@ -11,7 +11,7 @@ export class Quiz {
      */
     constructor(questions) {
         this.questions = questions
-    }
+    };
 
     /**
      * 
@@ -19,18 +19,16 @@ export class Quiz {
      */
     getCount() {
         return this.questions[this.questionIndex]
-    }
+    };
+
+    guess(answer) {
+        if (this.getCount().correctAnswer(answer)) {
+            this.score++
+        }
+        this.questionIndex++;
+    };
 
     isEnd() {
         return this.questions.length === this.questionIndex;
-    }
-
-
-    guess(answer) {
-        if(this.getCount().correctAnswer(answer)) {
-            this.score++
-        }
-
-        this.questionIndex++;
-    }
-}
+    };
+};

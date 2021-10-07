@@ -16,14 +16,12 @@ const renderPage = (quiz, ui) => {
         renderPage(quiz, ui)
     })
     ui.showProgress(quiz.questionIndex +1, questions.length)
-}
+};
 
 function main () {
-    const quiz = new Quiz(questions)
+    const quiz = new Quiz(questions);
     const ui = new UI();
-    
     renderPage(quiz, ui);
+};
 
-}
-
-main()
+main();

@@ -26,4 +26,4 @@ export const data = [
         ],
         answer: 'el del travieso'
     }
-]
+];
