@@ -1,29 +1,29 @@
 export const data = [
     {
-        question: 'Sos puto?',
+        question: 'Javascript es lo mismo que JAVA?',
         choices: [
-            'si',
-            're si',
-            'goloso pero no',
+            'Si',
+            'No',
+            'Dudoso pero si',
         ],
-        answer: 'si'
+        answer: 'No'
     },
     {
-        question: 'Sos trolaso?',
+        question: 'React, de quién es?',
         choices: [
-            'de noche',
-            'de dia',
-            'jugueton pero no trolaso',
+            'Facebook',
+            'Google',
+            'MercadoLibre',
         ],
-        answer: 'de noche'
+        answer: 'Facebook'
     },
     {
-        question: 'Te gusta el pedazo?',
+        question: 'Los corchetes ( [] ), como se llaman en programación generalmente?',
         choices: [
-            'grande y jugueton',
-            'el de jhon salchichon',
-            'el del travieso',
+            'Object',
+            'Prototype',
+            'Array',
         ],
-        answer: 'el del travieso'
+        answer: 'Array'
     }
 ];
